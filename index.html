@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<title>Turquoise Arrow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-aqua w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="w3-hide-small w3-right w3-dropdown-hover">
+      <a href="javascript:void(0)" class="w3-padding-large w3-button" title="More">WEB MAPPING <i class="fa fa-caret-down"></i></a>     
+       <div class="w3-dropdown-content w3-white w3-card-4">
+                   <a href="earthquake.html">Google API</a>
+                    <a href="leaflet.html">Leaflet API</a>
+                    <a href="ESRIAPI.html">ArcGIS API</a>
+                    <a href="arcscene3d.html">ArcScene 3D</a>
+        </div>
+     </div>
+      <div class="w3-hide-small w3-right w3-dropdown-hover"><a href="javascript:void(0)" class="w3-padding-large w3-button" title="More">PROJECTS<i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+                    <a href="harvestshare/index.html">Harvest Share</a>
+                    <a href="projects.html">Student Housing</a>
+        </div>
+     </div>
+
+    <a href="#contact" class="w3-bar-item w3-button w3-right w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="#about" class="w3-bar-item w3-button w3-right w3-padding-large w3-hide-small">ABOUT</a>
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"><img src="img/arrow.png" style="width:70%"></a>
+  </div>
+</div>
+
+<script type="text/javascript">// show/hide the menu when examples is clicked
+$(".dropdown-toggle").on("click", function () {
+  $(".dropdown-menu").toggle();
+});
+</script>
+
+<!-- Navbar on small screens -->
+
+<script type="text/javascript">
+window.onclick = function(event) {
+  if (!event.target.matches('.navDemo')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px" onclick="myFunction()">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <div class="w3-dropdown-hover">
+     <a href="javascript:void(0)" class="w3-bar-item w3-black w3-button w3-padding-large" >PROJECTS<i class="fa fa-caret-down"></i></a>     
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="harvestshare/index.html">Harvest Share</a>
+            <a href="projects.html">Student Housing</a>
+        </div>
+  </div>
+  <div class="w3-dropdown-hover">
+     <a href="javascript:void(0)" class="w3-bar-item w3-black w3-button w3-padding-large" >WEB MAPPING <i class="fa fa-caret-down"></i></a>     
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="earthquake.html">Google API</a>
+            <a href="leaflet.html">Leaflet API</a>
+            <a href="ESRIAPI.html">ArcGIS API</a>
+            <a href="arcscene3d.html">ArcScene 3D</a>
+        </div>
+  </div>
+
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img/slider/explore32.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>A WORLD TO FIND</h1>
+      <p><b>  </b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img/slider/explore22.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>A WORLD TO SEEK</h1>
+      <p><b>  </b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img/slider/explore12.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1>A WORLD TO GAIN</h1>
+      <p><b>  </b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide">SAVANNA NAGORSKI</h2>
+    <p class="w3-opacity"><i>A WORLD OF IDEAS</i></p>
+    <p class="w3-centered">I strive to engage with the community, public planners and everyone else in between to pursue a sustainable living environment. Relating my creative disposition to geospatial technologies provides opportunities to enhance a multi-tiered skill set that articulates my career and life goals.</p>
+    <p class="w3-opacity">Academic Achievements from<br><a href="http://www.tacoma.uw.edu/" target="_blank">University of Washington Tacoma</a>:<br><br>BA Sustainable Urban Development - 2014<br>GIS Certificate - 2014 <a href="http://srn0629.wixsite.com/srngis" target="_blank">(Portfolio)</a><br>MS Geospatial Technologies - 2016<br><br><br>Python and Xcode projects available on my <a href="https://github.com/srn0629" target="_blank">GitHub profile</a>.</p>
+
+    <div class="w3-row w3-padding-16">
+      <div class="w3-half">
+        <h2>Community Development</h2>
+        <a href="https://www.facebook.com/ourmelrosespace?_rdr=p" target="_blank"><img src="img/profile/garden.jpg"  style="width:95%"></a><p class="w3-padding-left" style="width:95%" >In addition to my career goals, my family and I have committed to managing and providing a neighborhood community garden, MelroseSpace, in our front yard - a great place for our neighbors to grow food and grow community! Special thanks to <a href="http://piercecd.org/194/Community-Gardens" target="_blank">Harvest Pierce County</a> and friends for all of their support. Get involved and check it out <a href="https://www.facebook.com/ourmelrosespace?_rdr=p" target="_blank">here</a>!</p>
+      </div>
+      <div class="w3-half">
+        <h2>Geospatial Technologies</h2>
+        <a href="http://www.turquoisearrow.com/harvestshare/" target="_blank"><img src="img/profile/1.jpg"  alt="Random Name" style="width:95%"></a><p class="w3-padding-left" style="width:95%" >In 2016, I partnered with Harvest Pierce County to develop a Harvest Share application for my capstone project. ArcGIS Online applications were integrated into a mobile-rendering website for community gardeners to share excess food with their surrounding neighbors. To explore, find it <a href="http://students.washington.edu/srn0629/hs/index.html/" target="_blank">here</a>. View other GT projects under the "Web Mapping" tab.</p>
+      </div>
+    </div>
+    <div class="w3-row w3-padding-16">
+      <div class="w3-half">
+          <h2>GIS Analysis & Cartography</h2>
+        <a href="projects.html" target="_blank"><img src="img/profile/uwt.png"  alt="Random Name" style="width:95%"></a><p class="w3-padding-left" style="width:95%" >With a few internship opportunities, I've expanded my GIS skills with spatial analysis and cartography work. I've been able to implement those skills into work projects, along with layout and design techniques I've learned over the years. More details are provided <a href="projects.html" target="_blank">here</a> and under the "Projects" tab.</p>
+      </div>
+      <div class="w3-half">
+        <h2>Photography</h2>
+        <a href="https://www.facebook.com/ourmelrosespace?_rdr=p" target="_blank"><img src="img/profile/photography.jpg"  style="width:95%"></a><p class="w3-padding-left" style="width:95%" >In school I began learning about the art of photography. As an adult, I've followed the passion of photography as a hobby and, in some cases, a small business, to capture the life of family and friends! I've been able to use this skill in previous positions as well. See a sample of my personal work <a href="https://www.facebook.com/savannarochele/" target="_blank">here</a>!</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="w3-black" id="contact">
+    <!-- The Tour Section<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">TOUR DATES</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Ticket Modal 
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-12 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>-->
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">GET IN TOUCH</h2>
+    <p class="w3-opacity w3-center"><i>I am currently seeking opportunities with geospatial technologies, <br>GIS databases or analysis, cartography,  and/or community development.</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Tacoma, WA<br><br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:savanna@turquoisearrow.com">savanna@turquoisearrow.com</a><br><br>
+        <i class="fa fa-linkedin w3-hover-text-black" style="width:30px"> </i> Resume: <a href="http://www.linkedin.com/in/savannanagorski" title="View Resume on LinkedIn" target="_blank"> linkedin.com/in/savannanagorski 
+
+      </div>
+       <!--<div class="w3-col m6">
+        <form action="http://www.turquoisearrow.com/cgi-sys/formmail.pl" method="post" target="_blank">
+          <input type="hidden" name="recipient" value="savanna@turquoisearrow.com"> 
+<input type="hidden" name="subject" value="TA E-Mail"> 
+
+<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <input type="hidden" name="redirect" value="http://turquoisearrow.com/">
+         <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+
+
+ USED FROM EHOST FORM <input type="text" name="email" size="20" value="Visitor E-Mail"><br> 
+<input type="text" name="tellme" size="20" value="Message"><br><br> 
+<input type="submit" name="submit" value="Send!"> 
+
+</form>-->
+      </div>
+    </div>
+  </div> 
+</div>
+<!-- End Page Content -->
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(47.252758, -122.442728);
+  var mapOptions= {
+    center:myCenter,
+    zoom:10, scrollwheel: false, draggable: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDswCKhInfb_B40hxiVKhJMD5Ne3CSg0Ag&callback=myMap"></script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="http://www.linkedin.com/in/savannanagorski" title="View Resume on LinkedIn" target="_blank"><span class="fa fa-linkedin w3-hover-text-black"></span></a>
+  <p class="w3-small">Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> Powered by eHost.<br>Customized and maintained by Savanna Nagorski.<br>Last updated 3/2017.</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// NOT USING When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+</script>
+
+</body>
+</html>

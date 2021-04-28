@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>ArcScene - 3D</title>   
+
+<meta name="description" content="This is a portfolio of labs completed by Savanna Nagorski in the Master of Science in Geospatial Technologies program at the University of Washington Tacoma. " /> 
+
+<!-- Mobile Specifics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>   
+
+<!-- Mobile Internet Explorer ClearType Technology -->
+<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+<!-- Bootstrap -->
+<link href="_include/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main Style -->
+<link href="_include/css/main.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- FancyBox -->
+<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+<!-- Font Icons -->
+<link href="_include/css/fonts.css" rel="stylesheet">
+
+<!-- Shortcodes -->
+<link href="_include/css/shortcodes.css" rel="stylesheet">
+
+<!-- Responsive -->
+<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="_include/css/responsive.css" rel="stylesheet">
+
+<!-- Supersized -->
+<link href="_include/css/supersized.css" rel="stylesheet">
+<link href="_include/css/supersized.shutter.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="#">
+
+<link rel="apple-touch-icon" href="#">
+<link rel="apple-touch-icon" sizes="114x114" href="#">
+<link rel="apple-touch-icon" sizes="72x72" href="#">
+<link rel="apple-touch-icon" sizes="144x144" href="#">
+
+<!-- Modernizr -->
+<script src="_include/js/modernizr.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+<style>
+.dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #26292E;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #26292E;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #26292E}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:#26292E;
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="sticky-nav">
+        <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+        
+        <div id="logo">
+            <a id="goUp" href="#home-slider" title="A World of Ideas"></a>
+        </div>
+        
+        <nav id="menu">
+            <ul id="menu-nav">
+                <li class="current"><a href="index.html">Home</a></li>
+
+                <li><div class="dropdown">
+                    <button class="dropbtn"><a href="#maps">MSGT Projects
+                </a></button>
+                <div class="dropdown-content">
+                    <a href="earthquake.html">Google API</a>
+                    <a href="leaflet.html">Leaflet API</a>
+                    <a href="ESRIAPI.html">ArcGIS API</a>
+                    <a href="ESRI3Dscene.html">ArcScene 3D</a>
+                </div>
+                </div>
+                </li>
+                <li><a href="http://students.washington.edu/srn0629/hs/index.html">MSGT Capstone</a>
+            </ul>
+        </nav>     
+    </div>
+</header>
+<!-- End Header -->
+
+<!-- Maps Section -->
+   
+<div id="maps" class="page-alternate">
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="title-page">
+                <h2 class="title">Landslide Slope Results</h2>
+                <h3 class="title-description">Comparisons Between Public DSM and Personal Drone</h3>
+
+        <!-- Start Description -->
+        <p>
+            <div class="map-wrap" align='center'>
+             <p>The origin of the data in the top layer comes from a public agency of a city in the Puget Sound region - a Digital Surface Model created with LiDAR data. The bottom layer is elevation captured from a personal drone of the same area - ArcScene was used to do a 3D analysis to drape imagery over the elevation data calculated. Further 3D Slope Analysis was conducted to each elevation data layer, which show very different results. 
+             The symbology in each layer is identical - 4 classifications range from green to red, with red being the steepest slope. As you can see, the data provided from the drone represents more accurate slopes. In the case of identifying potential and recent landslides, the use of drones, in this case, became more valuable than the less- detailed and infrequent LiDAR data collection.</p>
+            </div>
+<p align='center'><iframe src="ESRI3D.html" height='600' width='1040' scrolling='no' marginheight="0" marginwidth="0" frameborder="0"></iframe></p></p></div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
