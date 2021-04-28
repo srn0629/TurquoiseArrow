@@ -245,26 +245,6 @@ window.onclick = function(event) {
 </div>
 <!-- End Page Content -->
 
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
-<script>
-function myMap() {
-  myCenter=new google.maps.LatLng(47.252758, -122.442728);
-  var mapOptions= {
-    center:myCenter,
-    zoom:10, scrollwheel: false, draggable: true,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDswCKhInfb_B40hxiVKhJMD5Ne3CSg0Ag&callback=myMap"></script>
-
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
   <a href="http://www.linkedin.com/in/savannanagorski" title="View Resume on LinkedIn" target="_blank"><span class="fa fa-linkedin w3-hover-text-black"></span></a>
